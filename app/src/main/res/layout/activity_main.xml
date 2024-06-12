@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/shield"/>
+
+    <TextView
+        android:id="@+id/tvMotionAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/waiting_for_motion"
+        app:layout_constraintTop_toBottomOf="@id/animationView"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green"
+        android:textSize="21sp"
+        android:visibility="visible"
+        android:fontFamily="@font/montserrat_black"/>
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place_your_phone_in_a_stationary_location_and_open_the_application"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="45dp"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginBottom="55dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_touch_my_phone"
+        android:fontFamily="@font/montserrat_black"
+        app:layout_constraintBottom_toTopOf="@id/tvInformation"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginBottom="82dp"/>
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/montserrat_black"
+        android:text="@string/stop_alarm"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMotionAlert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dont Touch My phone</string>
+    <string name="place_your_phone_in_a_stationary_location_and_open_the_application">Place your phone in a stationary location and open the application</string>
+    <string name="don_t_touch_my_phone">don\'t touch my phone</string>
+    <string name="motion_detected">Motion detected</string>
+    <string name="waiting_for_motion">Waiting for motion…</string>
+    <string name="stop_alarm">Stop Alarm</string>
+</resources>
